@@ -34,6 +34,7 @@ This issue is commonly found in endpoints that handle navigation flows such as *
 3. If testing the `login` or `register` endpoint, complete the required form fields first.
 4. Submit the form or press Enter.
 5. Observe that the application redirects the user to the external website.
+```
 
 # Proof of Concept
 ```bash
