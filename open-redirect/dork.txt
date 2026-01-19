@@ -1,0 +1,4 @@
+inurl:?referrer= site:
+inurl:?returnUrl= site:
+inurl:?next= site:
+inurl:?return_uri= site:
