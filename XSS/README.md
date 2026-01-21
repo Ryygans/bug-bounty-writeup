@@ -27,7 +27,7 @@ Reflected XSS occurs when user input is immediately returned by the web applicat
 - Requires user interaction (e.g., clicking a malicious link)
 - Not stored on the server
 
-📂 Folder: `./reflected/`
+📂 Folder: `./reflected-xss/`
 
 ---
 
@@ -39,7 +39,7 @@ Stored XSS (also known as Persistent XSS) occurs when malicious input is stored 
 - Affects multiple users
 - High impact vulnerability
 
-📂 Folder: `./stored/`
+📂 Folder: `./stored-xss/`
 
 ---
 
@@ -52,7 +52,7 @@ The malicious payload is never sent to the server, but is executed due to insecu
 - Occurs in JavaScript logic
 - Harder to detect by traditional scanners
 
-📂 Folder: `./dom/`
+📂 Folder: `./dom-xss/`
 
 ---
 
