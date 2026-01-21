@@ -59,11 +59,11 @@ The malicious payload is never sent to the server, but is executed due to insecu
 ## Repository Structure
 ```text
 xss/
-├── reflected/
+├── reflected-xss/
 │   └── README.md
-├── stored/
+├── stored-xss/
 │   └── README.md
-├── dom/
+├── dom-xss/
 │   └── README.md
 └── README.md
 ```
