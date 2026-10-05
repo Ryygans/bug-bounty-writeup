@@ -1,74 +1,84 @@
 # 🐞 Bug Bounty Write-ups
 
-This repository documents my learning journey in **bug bounty hunting and web application security**.  
-It contains write-ups, notes, and experiments focused on understanding common web vulnerabilities and how they are identified, analyzed, and mitigated.
+A collection of my bug bounty learning journey, web security research, and vulnerability write-ups.
 
-> ⚠️ **Disclaimer**  
-> All targets, domains, and sensitive details are **redacted or anonymized**.  
-> This repository is intended **for educational purposes only**.
+This repository contains notes, write-ups, and experiments focused on understanding how common web vulnerabilities are identified, analyzed, validated, and mitigated.
 
 ---
 
-## 🎯 Scope
-The write-ups in this repository mainly cover:
+## 🎯 Focus Areas
+
 - Cross-Site Scripting (XSS)
 - Cross-Site Request Forgery (CSRF)
-- IDOR (Insecure Direct Object Reference)
-- Basic authentication & authorization issues
-- Web security misconfigurations
-- Bug bounty methodology & notes
+- IDOR / Broken Access Control
+- Authentication & Authorization
+- Open Redirect
+- Web Security Misconfigurations
+- Bug Bounty Methodology
+- Vulnerability Analysis & Reporting
 
 ---
 
-## 🧠 Purpose
-- Build a public learning portfolio
-- Practice structured vulnerability reporting
-- Improve understanding of real-world web security issues
-- Share knowledge with other beginners in bug bounty
+## 📝 Write-up Structure
 
----
+Most write-ups follow a structured format:
 
-## 📝 Write-up Format
-Most write-ups follow this structure:
 - Summary
-- Affected endpoint (redacted)
+- Affected Endpoint / Component
 - Proof of Concept (PoC)
-- Steps to reproduce
-- Impact analysis
+- Steps to Reproduce
+- Impact Analysis
 - Mitigation / Recommendation
 
+Sensitive information is redacted where necessary.
+
 ---
 
-## 🛡️ Ethics & Responsibility
+## 🧠 What I'm Learning
+
+Through these write-ups, I focus on improving my ability to:
+
+- Identify potential security weaknesses
+- Understand root causes of vulnerabilities
+- Validate security findings responsibly
+- Analyze potential impact
+- Write clear and reproducible vulnerability reports
+- Improve web application security knowledge
+
+---
+
+## 🛡️ Ethics & Responsible Disclosure
+
+All research is conducted for educational purposes and within authorized or intentionally vulnerable environments.
+
 - No undisclosed vulnerabilities are published
-- No real user data is exposed
-- No private bug bounty programs are harmed
-- Some cases may include **false positives or self-XSS** as part of learning
-
----
-
-## 🚀 Status
-This repository is **actively updated** as I continue learning bug bounty and web pentesting.
+- Sensitive information and user data are redacted
+- Private program details are not disclosed
+- Targets and domains may be anonymized when necessary
 
 ---
 
 ## 📚 Learning Resources
-- OWASP Web Top 10
+
+- OWASP Web Security
 - PortSwigger Web Security Academy
 - TryHackMe
+- CTF platforms
 - Bug bounty community write-ups
 
 ---
 
-## 🤝 Contributions
-This is a personal learning repository, but constructive feedback and discussions are welcome.
+## 🚀 Status
+
+This repository is continuously updated as I learn more about:
+
+**Web Application Security → Bug Bounty → Vulnerability Research**
 
 ---
 
-## 📌 Note
-If you are a beginner like me, feel free to use these notes as references —  
-**always practice ethically and legally.**
+## 👤 Researcher
 
-```bash
-Regard: zoxxtzy
-```
+**Handle:** `zoxxtzy`  
+**GitHub:** `Ryygans`
+
+> Learn. Test. Document. Improve.
