@@ -1,0 +1,130 @@
+# Sensitive Data Exposure via Exposed `.env` File
+
+## Summary
+
+An environment configuration file (`.env`) was found to be publicly accessible.
+
+Environment files are commonly used to store application configuration and secrets. Depending on the application, an exposed `.env` file may contain sensitive information such as API keys, database credentials, SMTP credentials, application secrets, or other configuration values.
+
+This finding was identified during authorized security research using search engine reconnaissance.
+
+## Affected URL
+
+https://redacted.target.com/.env
+
+## Severity
+
+⚠️ High
+
+CWE-200: Exposure of Sensitive Information to an Unauthorized Actor
+
+## Discovery
+
+One approach to identifying accidentally exposed configuration files is to use search engine reconnaissance with combinations of:
+
+- Authorized target scope
+- Configuration-related keywords
+- Common sensitive filenames
+- File extensions associated with application configuration
+
+For example, when performing research within an authorized scope, search patterns may be used to identify publicly indexed configuration files.
+
+The exact target, search query, and sensitive values are intentionally omitted from this write-up.
+
+## Steps to Reproduce
+
+1. Perform reconnaissance only against an authorized target.
+2. Identify a potentially exposed environment or configuration file.
+3. Request the file directly without attempting to access unrelated resources.
+4. Confirm whether the file is publicly accessible.
+5. Do not use or test any discovered credentials.
+6. Redact all sensitive information before documenting the finding.
+
+## Proof of Concept
+
+https://redacted.target.com/.env
+
+The endpoint was publicly accessible and returned environment configuration data.
+
+All credentials, secrets, API keys, and identifying information have been removed from this write-up.
+
+## What To Check
+
+If an obvious `.env` file is not present, developers and security researchers should also be aware that sensitive configuration may exist elsewhere in an application's structure.
+
+For authorized security testing, review whether the application exposes configuration-related directories or files, such as:
+
+- `config/`
+- Application configuration files
+- Backup copies of configuration files
+- Environment-specific configuration
+- Accidentally committed configuration files
+
+If the current version of a repository does not contain an obvious sensitive file, its **version history** should also be reviewed by the application owner.
+
+A sensitive file may have been committed in an earlier revision and later removed while remaining present in repository history.
+
+## Sensitive Information
+
+An exposed environment file may contain:
+
+- API keys
+- Database credentials
+- SMTP credentials
+- Application secrets
+- Authentication tokens
+- Third-party service credentials
+- Internal configuration values
+
+Not every `.env` file contains secrets, so the severity should be based on the actual information exposed.
+
+## Impact
+
+The impact depends heavily on the contents of the exposed configuration file.
+
+If the file contains valid credentials or secrets, an attacker may potentially gain unauthorized access to connected services or application infrastructure.
+
+Potential consequences include:
+
+- Unauthorized access to third-party services
+- Database compromise
+- Abuse of API services
+- Email account or SMTP abuse
+- Application compromise
+- Further unauthorized access using exposed secrets
+
+No credentials were used or tested as part of this research.
+
+## Mitigation and Remediation
+
+To properly mitigate this issue:
+
+• Prevent `.env` and other sensitive configuration files from being publicly accessible.
+
+• Configure the web server to deny access to sensitive files.
+
+• Never commit production secrets to public repositories.
+
+• Add sensitive files such as `.env` to `.gitignore`.
+
+• Store secrets using a dedicated secret management solution where possible.
+
+• Rotate all credentials that may have been exposed.
+
+• Review repository history if sensitive files were previously committed.
+
+• Remove sensitive information from affected commits where appropriate.
+
+## Disclosure Information
+
+> Reporting Method: Responsible Disclosure
+>
+> Discovery Method: Search Engine Reconnaissance
+>
+> Target: Redacted
+>
+> Status: Resolved
+>
+> Sensitive Data: Redacted
+>
+>Reward/Bounty? : Hall of Fame
